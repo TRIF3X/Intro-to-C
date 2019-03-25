@@ -24,7 +24,9 @@ int fizzbuzz(int n)
         };
     };
 
+    printf("my counter %d\n", counter);
     return counter;
+
 }
 
 #ifndef TESTING
