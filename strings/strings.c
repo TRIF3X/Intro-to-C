@@ -18,6 +18,7 @@ int string_length(char *s)
 }
 
 // gcc -Wall -Wextra -o strings strings.c
+// init
 
 /*
     Write a function that reverses the order of string s and outputs 
