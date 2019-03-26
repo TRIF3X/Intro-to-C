@@ -45,7 +45,7 @@ char *find_char(char *str, int c)
       p = &str[i];
       break;
     } else {
-        p =0;
+        p = 0;
     };
   };
   
@@ -62,6 +62,16 @@ char *find_char(char *str, int c)
 */
 char *find_string(char *haystack, char *needle)
 {
+    char *p = find_char(haystack, needle[0]);
+
+    for(int i=0; needle[i] != 0; i++){
+        if (p[i] != needle[i]) {
+            return 0;
+        };
+    };
+
+    return p;
+
 
 }
 
